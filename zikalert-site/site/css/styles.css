@@ -632,9 +632,9 @@ a.facebook_social_icon {
 @media screen and (max-width: 500px) {
     .header_wrapper {
 		width: 100%;
-		height: 306px;
+		height: 400px;
 		float: left;
-		margin-top: 76px;
+		margin-top: 26px;
 		background: #1693a5;
 	}
 	.header_text_wrapper {
@@ -699,6 +699,19 @@ a.facebook_social_icon {
 	.right_column_section_three {
 		padding-bottom: 0px;
 	}
+	.download_cta_section {
+	background-color: #ff8a1e;
+/* 	background-color: #fff; */
+	float: left;
+	width: 100%;
+	color: #FFF;
+	text-align: center;
+	height:225px;
+/*
+	padding-top: 50px;
+	padding-bottom: 50px;
+*/
+}
 	.download_cta_section h3 {
 		font-size: 22px;
 	}
