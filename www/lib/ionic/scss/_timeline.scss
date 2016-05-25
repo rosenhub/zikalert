@@ -1,0 +1,202 @@
+.timeline {
+	margin: 20px 0 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 4px;
+		background: $timeline-line-color;
+		left: 20%;
+		margin-left: -42px;
+		@media screen and (max-width: 320px) {
+			left: 21%;
+		}
+	}
+	> li {
+		position: relative;
+		.tmlabel {
+			@include border-radius($timeline-bubble-border-radius);
+			margin: 0 0 5px 20%;
+			padding: 0.5em;
+			font-size: 1.1em;
+			font-weight: 300;
+			line-height: 1.4;
+			position: relative;
+			margin-right: 15px;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+			h4 {
+				margin-top: 0;
+				margin: 0px 0;
+				padding: 10px 0 10px 0;
+				line-height: 20%;
+			}
+			&:after {
+				right: 100%;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border-width: 8px;
+				top: 8px;
+			}
+		}
+		.tmicon {
+			@include timeline-line-style($timeline-line-shadow, $timeline-line-color);
+			@include border-radius(50%);
+			width: 40px;
+			height: 40px;
+			vertical-align: top;
+			font-size: 1.4em;
+			line-height: 40px;
+			position: absolute;
+			text-align: center;
+			left: 20%;
+			top: 0;
+			margin: 0 0 0 -60px;
+			@media screen and (max-width: 320px) {
+    		left: 21%;
+  		}
+			> img:first-child {
+				@include border-radius(50%);
+				width: 40px;
+				height: 40px;
+				vertical-align: top;
+			}
+		}
+		.tmlabel-light {
+	    @include timeline-style($timeline-light-bg);
+			@include timeline-clear($timeline-light-text);
+			h4 {
+				@include timeline-clear($timeline-light-text);
+			}
+			&:after {
+				@include timeline-triangle-style($timeline-light-bg);
+			}
+	  }
+		.tmlabel-stable {
+	    @include timeline-style($timeline-stable-bg);
+			@include timeline-clear($timeline-stable-text);
+			h4 {
+				@include timeline-clear($timeline-stable-text);
+			}
+			&:after {
+				@include timeline-triangle-style($timeline-stable-bg);
+			}
+	  }
+		.tmlabel-positive {
+	    @include timeline-style($timeline-positive-bg);
+			@include timeline-clear($timeline-positive-text);
+			h4 {
+				@include timeline-clear($timeline-positive-text);
+			}
+			&:after {
+				@include timeline-triangle-style($timeline-positive-bg);
+			}
+	  }
+		.tmlabel-calm {
+	    @include timeline-style($timeline-calm-bg);
+			@include timeline-clear($timeline-calm-text);
+			h4 {
+				@include timeline-clear($timeline-calm-text);
+			}
+			&:after {
+				@include timeline-triangle-style($timeline-calm-bg);
+			}
+	  }
+		.tmlabel-assertive {
+	    @include timeline-style($timeline-assertive-bg);
+			@include timeline-clear($timeline-assertive-text);
+			h4 {
+				@include timeline-clear($timeline-assertive-text);
+			}
+			&:after {
+				@include timeline-triangle-style($timeline-assertive-bg);
+			}
+	  }
+		.tmlabel-balanced {
+	    @include timeline-style($timeline-balanced-bg);
+			@include timeline-clear($timeline-balanced-text);
+			h4 {
+				@include timeline-clear($timeline-balanced-text);
+			}
+			&:after {
+				@include timeline-triangle-style($timeline-balanced-bg);
+			}
+	  }
+		.tmlabel-energized {
+	    @include timeline-style($timeline-energized-bg);
+			@include timeline-clear($timeline-energized-text);
+			h4 {
+				@include timeline-clear($timeline-energized-text);
+			}
+			&:after {
+				@include timeline-triangle-style($timeline-energized-bg);
+			}
+	  }
+		.tmlabel-royal {
+	    @include timeline-style($timeline-royal-bg);
+			@include timeline-clear($timeline-royal-text);
+			h4 {
+				@include timeline-clear($timeline-royal-text);
+			}
+			&:after {
+				@include timeline-triangle-style($timeline-royal-bg);
+			}
+	  }
+		.tmlabel-dark {
+	    @include timeline-style($timeline-dark-bg);
+			@include timeline-clear($timeline-dark-text);
+			h4 {
+				@include timeline-clear($timeline-dark-text);
+			}
+			&:after {
+				@include timeline-triangle-style($timeline-dark-bg);
+			}
+	  }
+		.tmicon-light {
+			@include timeline-style($timeline-light-bg);
+			@include timeline-clear($timeline-light-text);
+		}
+		.tmicon-stable {
+			@include timeline-style($timeline-stable-bg);
+			@include timeline-clear($timeline-stable-text);
+		}
+		.tmicon-positive {
+			@include timeline-style($timeline-positive-bg);
+			@include timeline-clear($timeline-positive-text);
+		}
+		.tmicon-calm {
+			@include timeline-style($timeline-calm-bg);
+			@include timeline-clear($timeline-calm-text);
+		}
+		.tmicon-assertive {
+			@include timeline-style($timeline-assertive-bg);
+			@include timeline-clear($timeline-assertive-text);
+		}
+		.tmicon-balanced {
+			@include timeline-style($timeline-balanced-bg);
+			@include timeline-clear($timeline-balanced-text);
+		}
+		.tmicon-energized {
+			@include timeline-style($timeline-energized-bg);
+			@include timeline-clear($timeline-energized-text);
+		}
+		.tmicon-royal {
+			@include timeline-style($timeline-royal-bg);
+			@include timeline-clear($timeline-royal-text);
+		}
+		.tmicon-dark {
+			@include timeline-style($timeline-dark-bg);
+			@include timeline-clear($timeline-dark-text);
+		}
+	}
+}
+.timelineimg {
+	width: 100%;
+}
